@@ -1,0 +1,60 @@
+prefix: "&7[&b&l🕹️&7]&f" # 訊息前綴
+
+# 大廳系統設定
+lobby_system:
+  # 大廳所處世界名稱
+  lobby_world: world_lobby
+
+  # 具有此權限的玩家可繞過限制 (破壞、放置、使用等)
+  lobby_permission: koukeneko.lobby.bypass
+
+  # 是否允許玩家在大廳世界破壞方塊
+  allow_break: false
+
+  # 是否允許玩家在大廳世界放置方塊
+  allow_place: false
+
+  # 是否允許玩家在大廳世界使用互動（右鍵、開門等）
+  allow_use: false
+
+  # 是否允許玩家在大廳世界攻擊生物
+  allow_attack: false
+
+  # 是否於大廳世界爆炸
+  allow_explosion: false
+
+  # 是否允許玩家在大廳世界與礦車碰撞
+  allow_vehicle_collision: false
+
+  # 大廳效果設定
+  effects:
+    # 是否啟用大廳效果
+    enabled: true
+    # 效果刷新間隔（單位：刻，20刻 = 1秒）
+    interval: 200
+    # 效果持續時間（單位：刻）
+    duration: 220
+    # 啟用的效果
+    regeneration: true
+    speed: true
+    saturation: true
+
+  # 大廳位置 (玩家使用 /setlobby 後會自動更新以下數值)
+  enable_lobby_location: false
+  lobby_location:
+    world: world_lobby
+    x: 0.0
+    y: 100.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+
+# 訊息設定
+messages:
+  only_player: "&c只有玩家才可以使用"
+  no_permission: "&c你沒有權限執行此命令"
+  lobby_set: "&a大廳位置已設定"
+  lobby_not_enabled: "&c大廳位置未啟用，請聯絡管理員"
+  lobby_not_set: "&c大廳位置未設定，請聯絡管理員"
+  teleport_success: "&a傳送至大廳"
+  config_reloaded: "&a設定文件已重新載入！"
